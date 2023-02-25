@@ -1,38 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+
 .App {
-  text-align: center;
+  padding: 100px 80px 100px 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  padding-bottom: 120px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  font-family: 'Inter';
+  font-style: Bold;
+  font-size: 34px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h3{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h4{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+
+}
+
+
+.pFooter{
+  opacity: 50%;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px
+}
+
+p{
+  font-family: 'Inter';
+  font-size: medium;
+  font-size: 16px;
+}
+body {
+  background: #F1F1F1;
+}
+
+.btns_and_modalbtn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.list{
+  display: flex;
+}
+
+.btn{
+  margin-right: 10px;
+  width: 87px;
+  height: 40px;
+  padding: 8px, 24px, 8px, 24px;
+  font-family: 'Inter';
+  font-size: medium;
+  font-size: 14px;
+  border-radius: 100px;
+  border: none;
+  background: rgba(8, 30, 52, 0.05);
+}
+
+.btn:hover{
+  background: rgba(8, 30, 52, 0.42);
+  color: #F1F1F1;
+  
+}
+
+.btn.active {
+  background: rgba(8, 30, 52, 0.42);
+  color: #F1F1F1;
+}
+
+.formbtn{
+  background:#081E34;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 100px;
+  color:#fff;
+  position:fixed;
+  right: 50px;
+}
+
+faPlus {
+  width: 24px;
+  height: 24px;
+}
+
+.modal{
+  background: #E4E6E7;
+  width: 268px;
+  height: 234px;
+  padding: 16px;
+  position: fixed;
+  right: 160px;
+  bottom: 352px;
+  border-radius: 12px;
+  box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+.inputModal{
+  width: 262px;
+  height: 120px;
+  text-align:start;
+  border: none;
+}
+
+.modalbtn{
   display: flex;
   flex-direction: column;
+  
+
+}
+
+.Addbtn{
+  margin-top:10px ;
+  padding: 8px 24px 8px 24px;
+  width: 76px;
+  height: 40px;
+  background: #081E34;
+  border-radius: 50px;
+  color:#fff;
+  border: none;
+}
+
+.btnfilter{
+  margin-top: 64px;
+}
+
+.line{
+  width: 1400px;
+  height: 2;
+  background: rgba(21, 21, 23, 1);
+  opacity: 20%;
+  border-bottom: solid 2px;
+}
+
+.modalbtn-2{
+  position: absolute;
+  box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+.text{
+  display: flex;
+}
+
+li{
+  display: flex;
+  list-style-type: none;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+span{
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movetotrash{
+ 
+  
+
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 240px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: medium;
+  font-size: 14px;
+  background: #E4E6E7;
+  border-radius: 12px;
+  border: none;
+  text-align: start;
+  align-items: start;
+  padding: 12px 18px 12px 11px;
+  box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+.text-btn-move{
+  margin-left: 18.11px;
+}
+
+.inputLi {
+  margin-left: 14.5px;
+}
+
+.inputLi2{
+  margin-left: 14.5px;
+ 
+ 
+}
+.inputLi2:checked {
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+}
+
+li.open {
+  margin-bottom: 80px; /* отступ снизу для li */
+}
+
+.limap{
+  position: absolute;
+  overflow: hidden;
+ 
+}
+
+.btntrash {
+  display: flex;
+  flex-direction: column;
+  background: #E4E6E7;
+  border-radius: 12px;
+
+}
+
+.btntrash2{
+  margin-top: 6px;
+  
+  width: 240px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: medium;
+  font-size: 14px;
+  background: #E4E6E7;
+  border-radius: 12px;
+  border: none;
+  text-align: start;
+  align-items: start;
+  padding: 12px 18px 12px 11px;
+}
+
+.btntrash3{
+  margin-bottom: 6px;
+
+  width: 240px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: medium;
+  font-size: 14px;
+  background: #E4E6E7;
+  border-radius: 12px;
+  border: none;
+  text-align: start;
+  align-items: start;
+  padding: 12px 18px 12px 11px;
+}
+
+.textspan{
+  margin-left: 14.5px;
+}
+
+.faPlus{
+  width: 24px;
+  height: 24px;
+}
+
+.alldivbtn{
+  width: 300px;
+}
+
+.footer{
+
+  margin-top: 288px;
+  display: flex;
+  justify-content: space-between;
 }
